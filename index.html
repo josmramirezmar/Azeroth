@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head> <!-- informacion general del documento -->
+  <meta charset="utf-8"> <!-- codificacion de caracteres para permitir tildes y ñ -->
+  <meta lang="es"> <!-- idioma del documento : español -->
+  <link href="css/estilos.css" rel="stylesheet" type="text/css"> <!-- llamado al archivo css -->
+  <meta name="viewport" content="width=device-width; initial-scale=1.0"> <!-- para inicial la pesataña en tamaño completo de la ventana-->
+  <link rel="icon" href="imagenes/icon.png" type="image/png"> <!-- favicon en la pesataña del navegador -->
+  <title>Azeroth</title> <!-- titulo de la pestaña del navegador -->
+</head>
+
+<body> <!-- Documento -->
+  <div class="encabezado"> <!-- division para el encabezado del documento -->
+    <img class="sleft" src="imagenes/alianza.png" alt="Simbolo Alianza"> <!-- imagen izquierda del encabezado -->
+    <img class="sright" src="imagenes/horda.png" alt="Simbolo Horda"> <!-- imagen derecha del encabezado -->
+    <h1>AZEROTH</h1> <!-- titulo del encabezado -->
+  </div>
+
+  <nav> <!-- menu de navegacion -->
+    <button class="buttonav"><a href="index.html" target="_self">INICIO</a></button> <!-- enlace en un boton para efectos visuales -->
+    <div class="dropmenu"> <!-- division para menu desplegable -->
+      <button class="buttonavin"><a href="html/geografia.html" target="_self">GEOGRAFIA</a></button>
+        <div class="droplist"><ul class="listnav"> <!-- lista menu desplegable-->
+          <li><a href="html/continentes.html">CONTINENTES</a></li> <!-- elementos lista -->
+          <li><a href="html/voragine.html">LA VORAGINE</a></li>
+        </ul></div>
+    </div>
+    <button class="buttonav"><a href="html/historia.html" target="_self">HISTORIA</a></button>
+    <div class="dropmenu"> <!-- division para menu desplegable -->
+      <button class="buttonavin"><a href="html/razas.html" target="_self">RAZAS</a></button>
+        <div class="droplist"><ul class="listnav"> <!-- lista menu desplegable-->
+          <li><a href="html/personajes.html">PERSONAJES IMPORTANTES</a></li> <!-- elementos lista -->
+        </ul></div>
+    </div>
+    <button class="buttonav"><a href="html/actividades.html" target="_self">ACTIVIDADES</a></button>
+    <button class="buttonav"><a href="html/referencias.html" target="_self">REFERENCIAS</a></button>
+  </nav>
+
+  <div class="contenido"> <!-- division del contenido del documento -->
+    <h2>INICIO</h2> <!-- titulo contenido -->
+
+    <p class="pcentrado">Azeroth es el nombre del planeta donde la mayoría de la saga de Warcraft está basada, creado por la compañía de videojuegos Blizzard Entertainment. En su núcleo descansa un alma-mundo dormida, el espíritu naciente de un titán.</p>
+
+    <div class="imag">
+      <img class="imgcent" src="imagenes/azeroth.jpg" alt="Azeroth desde el espacio">
+    </div>
+
+    <p class="pjust">El mundo de Azeroth es el lugar de nacimiento de muchas razas, las más famosas son: elfos (elfos nocturnos y elfos de sangre), humanos, enanos, taurens, goblins, trolls, gnomos y dragones. A su nacimiento Azeroth fue bendecida por los Titanes. Luego, los ejércitos demoniacos de la Legión Ardiente vinieron y acabaron con la paz en Azeroth. Gradualmente otras razas vinieron a Azeroth (como los orcos, ogros y draeneis), otros evolucionaron, y otros vinieron de la tierra misma. Los habitantes de Azeroth han combatido brutalmente contra los demonios y sus sirvientes, mucha sangre fue y es derramada. Después de la Tercera Guerra tres facciones máximas emergieron: el Azote, la Horda y la Alianza. Otras facciones son los Nagas, los Qiraji y la Scarlet Crusade (Cruzada Escarlata). Azeroth ha sobrevivido a la legión dos veces; sin embargo, Azeroth todavía está atestada de conflictos, odio y guerra.</p>
+  </div>
+
+  <div class="piepa"> <!-- division del pie de pagina del documento -->
+    <p>Autor: Jose Manuel Ramirez Martinez <br>
+    Correo: <a class="correo" href="mailto:josmramirezmar@unal.edu.co">josmramirezmar@unal.edu.co</a></p> <!-- enlace de contacto -->
+  </div>
+
+  <div class="reproductor"> <!-- reproductor de musica -->
+    <audio controls autoplay loop> <!-- controles estandar, reproduccion automatica y en bucle no disponible en chrome -->
+      <source src="audios/lionsRest.mp3" type="audio/mpeg">
+      <p>Tu navegador no implementa el elemento audio</p>
+    </audio>
+  </div>
+</body>
+
+</html>

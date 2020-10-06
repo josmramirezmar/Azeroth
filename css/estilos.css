@@ -1,0 +1,356 @@
+@charset "UTF-8"; /* codificacion de caracteres */
+
+@font-face {
+  font-family: "Times New Roman", Times, serif; /* fuentes que se van a usar en el documento */
+}
+
+* {
+  box-sizing: border-box; /* el padding y el borde se incluyen en el ancho y alto de los elementos */
+  font-family: "Times New Roman", Times, serif; /* fuente usada en todo el documento */
+}
+html {
+  font-size:16px; /* tamaño de fuente base para todo el documento */
+}
+body {
+  background: linear-gradient(to right, #003399 0%, #990033 100%);
+  /*background-color: #354655;*/ /* color de fondo del documento */
+}
+
+/* estilo para la division del encabezado */
+.encabezado {
+  width: 100%; /* ancho del encabezado en relacion al ancho total del navegador */
+  margin-bottom: 5px;
+  background-color: #FFFFFF; /* color de fondo encabezado */
+  border: 2px solid #420063; /* borde */
+}
+/* estilo para simbolo flotante a la izquierda en el encabezado */
+.sleft {
+  width: 8%; /* altura de la imagen relativa */
+  min-width: 70px; /* tamaño minimo */
+  max-width: 90px; /* tamaño maximo */
+  float: left; /* elemento flotante ne la division ubicado a la izquierda */
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  margin-left: 0.5%;
+}
+/* estilo para simbolo flotante a la derecha en el encabezado */
+.sright {
+  width: 8%;
+  min-width: 70px;
+  max-width: 90px;
+  float: right; /* elemento flotante ne la division ubicado a la derecha */
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  margin-right: 0.5%;
+}
+/* etiqueta utilizada unicamente en el titulo del encabezado */
+h1 {
+  height: 10%; /* altura relativa que define el maximo del encabezado */
+  margin-top: 1%;
+  margin-bottom: 1%;  /* margen inferior para estetica afecta a todo el encabezado */
+  text-align: center;
+  font-size: 4rem; /* tamaño relativo del texto en relacion al indicado en html */
+  color: #420063;
+  text-shadow: 1px 1px #000000;
+}
+
+/* estilo para el menu de navegacion en el encabezado sticky */
+nav {
+  position: sticky; /* posicionado sticky para permitir que se desplace la barra de navegacion en la ventana */
+  top: 0px;
+  z-index: 2;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: linear-gradient(to right, #003399 0%, #990033 100%);
+  text-align: center;
+}
+/* estilo para el menu de navegacion en el encabezado fijo */
+.menunav {
+  position: relative; /* posicionado relativa para mantener la barra de navegacion*/
+}
+/* estilo para los botones en el menu de navegacion en el encabezado */
+.buttonav {
+  width: 16%; /* para distriuir 6 botones en el ancho de la ventana */
+  margin: 2px 2px 2px 2px;
+  background-color: #420063;
+  border: 2px solid #420063;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+/* estilo para los botones en el menu de navegacion con cursor encima */
+.buttonav:hover {
+  background-color: #685075;
+}
+/* estilo division para el menu desplegable */
+.dropmenu {
+  width: 16%; /* mismo ancho de los botones */
+  position: relative; /* posicion relatiuva para mantenerse en linea con botones */
+  display: inline-block;
+}
+/* estilo para los botones en el menu de navegacion con menu desplegable */
+.buttonavin {
+  width: 100%; /* para coincidir con la division que ya esta al 15% de la ventana */
+  background-color: #420063;
+  border: 2px solid #420063;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+/* estilo para los botones de menu desplegable en el menu de navegacion con cursor encima */
+.buttonavin:hover {
+  background-color: #685075;
+}
+/* estilo menu desplegable */
+.droplist{
+  display: none;
+  position: absolute;
+  width: 100%; /* para coincidir con la division que ya esta al 15% de la ventana */
+  background-color: #685075;
+  border: 2px solid #420063;
+  border-radius: 10px;
+  z-index: 1;
+}
+/* visualizacion del menu desplegable */
+.dropmenu:hover .droplist {
+  display: block;
+}
+/* estilo lista menu desplegable */
+.listnav {
+  list-style-type: none; /* sin caracter de lista */
+  margin: 5px;
+  padding: 0px;
+}
+/* estilo elementos de la lista menu desplegable */
+li {
+  padding: 2px;
+  border-bottom: 2px dashed #420063;
+}
+
+/* enlace sin acceder */
+a:link {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+/* enlace accedido */
+a:visited {
+  text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* estilo para la division del contenido */
+.contenido {
+  margin-bottom: 5px;
+  padding: 1px 10px 1px 10px;
+  background-color: #FFFFFF;
+  border: 2px solid #420063;
+}
+
+/* etiqueta utilizada unicamente en el titulo del contenido por pagina */
+h2 {
+  border-top: 2px dashed #420063;
+  border-bottom: 2px dashed #420063;
+  text-align: center;
+  font-size: 2rem;
+  color: #420063;
+}
+
+/* etiqueta de parrafo utilizada para el contenido */
+p {
+  padding: 1px 10px 1px 10px;
+  font-size: 1rem;
+}
+/* etiqueta de parrafo centrado */
+.pcentrado {
+  text-align: center;
+}
+/* etiqueta de parrafo justificado */
+.pjust {
+  text-align: justify;
+}
+/* etiqueta de parrafo a la derecha*/
+.pright{
+  text-align: right;
+}
+
+/* division para las imagenes centrradas en el documento */
+.imag {
+  margin-bottom: 5px;
+  text-align: center;
+}
+/* estilo para imagenes grandes centradas en el documento */
+.imgcent {
+  width: 85%;
+  max-width: 1000px; /* limitando el maximo para que en pantallas anchas no sea necesario scroll */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 2px solid #420063;
+  border-radius: 10px;
+}
+
+/* etiqueta utilizada unicamente en los subtitulo del contenido por pagina */
+h3 {
+  border-bottom: 2px dashed #420063;
+  text-align: left;
+  font-size: 1.5rem;
+  color: #420063;
+}
+
+/* etiqueta utilizada para la division de la galeria */
+.galeria {
+  text-align: center;
+}
+/* etiqueta utilizada para la division de los botones de la galeria */
+.butgaleria {
+  width: 30%;
+  position: relative; /* posicion relativa para mantenerse en linea con botones */
+  display: inline-block;
+  text-align: center;
+}
+/* division para los botones de la galeria */
+.butimg {
+  width: 100%;
+  background-color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+}
+/* estilo imagenes pequeñas de la galeria */
+.imgmini {
+  width: 100%;
+}
+/* etiqueta utilizada para la division que muestra la primera imagen de la galeria */
+.imagaleria1 {
+  width: 300%; /* para llegar a aporximadamente a 80% de la ventana */
+  display: none;
+  position: relative; /* para posicion en relazion a la division quie la continene */
+  float: left;
+  left: -50% /* para que su posicion sea centrada */
+}
+/* etiqueta utilizada para la division que muestra la segunda imagen de la galeria */
+.imagaleria2 {
+  width: 300%;
+  display: none;
+  position: relative; /* para posicion en relazion a la division quie la continene */
+  float: left;
+  left: -150% /* para que su posicion sea centrada */
+}
+/* estilo para imagenes grandes de la galeria */
+.imgcentg {
+  width: 100%;
+  max-width: 1000px; /* limitando el maximo para que en pantallas anchas no sea necesario scroll */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 2px solid #420063;
+  border-radius: 10px;
+}
+/* visualizacion de la imagen en la galeria */
+.butgaleria:hover .imagaleria1 {
+  display: block;
+}
+.butgaleria:hover .imagaleria2 {
+  display: block;
+}
+
+/* etiqueta utilizata para los items de la lista de contenido */
+.licont {
+  border: none;
+}
+/* etiqueta utilizata para los liks de la lista de contenido */
+.linknav:link {
+  color: #420063;
+}
+.linknav:visited {
+  color: #420063;
+}
+
+/* etiqueta utilizada unicamente en el video insertado de youtube */
+iframe {
+  width: 60%;
+  height: 60%;
+}
+
+/* estilo para la division del pie de pagina */
+.piep {
+  padding: 1px 10px 1px 10px;
+  background-color: #FFFFFF;
+  border: 2px solid #420063;
+}
+/* estilo para la division del pie de pagina con el reproductor de audio */
+.piepa {
+  padding: 1px 10px 1px 10px;
+  background-color: #FFFFFF;
+  border: 2px solid #420063;
+}
+
+/* enlace de correo sin acceder */
+.correo:link {
+  text-decoration: none;
+	color: #420063;
+}
+/* enlace de correo accedido */
+.correo:visited {
+  text-decoration: none;
+	color: #420063;
+}
+
+/* estilo para la division del reproductor de musica */
+.reproductor {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
+
+/* responsive para dispositivos menores a 900px */
+@media only screen and (max-width: 900px) {
+    body {
+    background: linear-gradient(to right, #003399 0%, #990033 100%);
+}
+
+/* cambios en la barra de navegacion */
+.buttonav {
+  width: 30%;
+}
+.dropmenu {
+  width: 30%;
+}
+
+/* cambio en el video insertado de youtube */
+iframe {
+  height: 30%;
+}
+
+/* responsive para dispositivos menores a 600px */
+@media only screen and (max-width: 600px) {
+    body {
+    background: linear-gradient(to right, #003399 0%, #990033 100%);
+}
+
+/* a pesar de tamaños relativos cambio en el titulo para estetica en dispositivos pequeños */
+h1 {
+  padding-top: 3%;
+  font-size: 3rem;
+}
+
+/* cambios en la barra de navegacion */
+.buttonav {
+  font-size: 1.1rem;
+}
+.buttonavin {
+  font-size: 1.1rem;
+}
+
+/* cambio en el video insertado de youtube */
+iframe {
+  width: 85%;
+}
+
+/* cambio en el pie de pagina */
+.piepa {
+  padding-bottom: 12%;
+}
+.reproductor {
+  position: fixed;
+  bottom: 2.5%;
+  left: 18%;
+}

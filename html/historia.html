@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head> <!-- informacion general del documento -->
+  <meta charset="utf-8"> <!-- codificacion de caracteres para permitir tildes y ñ -->
+  <meta lang="es"> <!-- idioma del documento : español -->
+  <link href="../css/estilos.css" rel="stylesheet" type="text/css"> <!-- llamado al archivo css -->
+  <meta name="viewport" content="width=device-width; initial-scale=1.0"> <!-- para inicial la pesataña en tamaño completo de la ventana-->
+  <link rel="icon" href="../imagenes/icon.png" type="image/png"> <!-- favicon en la pesataña del navegador -->
+  <title>Azeroth: Hisotria</title> <!-- titulo de la pestaña del navegador -->
+</head>
+
+<body> <!-- Documento -->
+  <div class="encabezado"> <!-- division para el encabezado del documento -->
+    <img class="sleft" src="../imagenes/alianza.png" alt="Simbolo Alianza"> <!-- imagen izquierda del encabezado -->
+    <img class="sright" src="../imagenes/horda.png" alt="Simbolo Horda"> <!-- imagen derecha del encabezado -->
+    <h1>AZEROTH</h1> <!-- titulo del encabezado -->
+  </div>
+
+  <nav> <!-- menu de navegacion -->
+    <button class="buttonav"><a href="../index.html" target="_self">INICIO</a></button> <!-- enlace en un boton para efectos visuales -->
+    <div class="dropmenu"> <!-- division para menu desplegable -->
+      <button class="buttonavin"><a href="geografia.html" target="_self">GEOGRAFIA</a></button>
+        <div class="droplist"><ul class="listnav"> <!-- lista menu desplegable-->
+          <li><a href="continentes.html">CONTINENTES</a></li> <!-- elementos lista -->
+          <li><a href="voragine.html">LA VORAGINE</a></li>
+        </ul></div>
+    </div>
+    <button class="buttonav"><a href="historia.html" target="_self">HISTORIA</a></button>
+    <div class="dropmenu"> <!-- division para menu desplegable -->
+      <button class="buttonavin"><a href="razas.html" target="_self">RAZAS</a></button>
+        <div class="droplist"><ul class="listnav"> <!-- lista menu desplegable-->
+          <li><a href="personajes.html">PERSONAJES IMPORTANTES</a></li> <!-- elementos lista -->
+        </ul></div>
+    </div>
+    <button class="buttonav"><a href="actividades.html" target="_self">ACTIVIDADES</a></button>
+    <button class="buttonav"><a href="referencias.html" target="_self">REFERENCIAS</a></button>
+  </nav>
+
+  <div class="contenido"> <!-- division del contenido del documento -->
+    <h2>HISTORIA</h2> <!-- titulo contenido -->
+    <div class="imag"> <!-- division para el iframe de youtube -->
+      <iframe src="https://www.youtube.com/embed/7EQlnM-Phh8" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- insersion de video de youtube -->
+    </div>
+    <h3>ANTIGUA</h3>
+    <h3>LAS TRES GUERRAS</h3>
+    <h3>POST-GUERRA</h3>
+    <h3>TIEMPOS RECIENTES</h3>
+  </div>
+
+  <div class="piep"> <!-- division del pie de pagina del documento -->
+    <p>Autor: Jose Manuel Ramirez Martinez <br>
+    Correo: <a class="correo" href="mailto:josmramirezmar@unal.edu.co">josmramirezmar@unal.edu.co</a></p> <!-- enlace de contacto -->
+  </div>
+</body>
+
+</html>
