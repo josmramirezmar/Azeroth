@@ -433,7 +433,7 @@ iframe {
 
 /* cambio en el orden razas */
 .secraza {
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 .imgcolum1 {
@@ -457,6 +457,10 @@ iframe {
   height: 150px;
   position: relative;
   margin: auto;
+}
+.volver {
+  margin-top: 15px;
+  width: 100%;
 }
 
 /* cambio en el pie de pagina */
