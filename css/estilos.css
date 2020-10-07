@@ -169,7 +169,7 @@ p {
 .pjust {
   text-align: justify;
 }
-/* etiqueta de parrafo a la derecha*/
+/* etiqueta de parrafo a la derecha */
 .pright{
   text-align: right;
 }
@@ -192,7 +192,7 @@ p {
 /* etiqueta utilizada unicamente en los subtitulo del contenido por pagina */
 h3 {
   border-bottom: 2px dashed #420063;
-  text-align: left;
+  text-align: center;
   font-size: 1.5rem;
   color: #420063;
 }
@@ -214,6 +214,7 @@ h3 {
   background-color: #FFFFFF;
   border: 2px solid #FFFFFF;
   border-radius: 10px;
+  cursor: pointer;
 }
 /* estilo imagenes pequeñas de la galeria */
 .imgmini {
@@ -254,13 +255,16 @@ h3 {
 
 /* etiqueta utilizata para los items de la lista de contenido */
 .licont {
+  font-size: 1.2rem;
   border: none;
 }
 /* etiqueta utilizata para los liks de la lista de contenido */
 .linknav:link {
+  font-size: 1.2rem;
   color: #420063;
 }
 .linknav:visited {
+  font-size: 1.2rem;
   color: #420063;
 }
 
@@ -268,6 +272,36 @@ h3 {
 iframe {
   width: 60%;
   height: 60%;
+}
+
+/* etiqueta para division en dos columnas la primera */
+.colum1 {
+  width: 49%; /* mismo ancho de los botones */
+  position: relative; /* posicion relatiuva para mantenerse en linea con botones */
+  display: inline-block;
+}
+/* etiqueta para division en dos columnas la segunda */
+.colum2 {
+  width: 49%; /* mismo ancho de los botones */
+  position: relative; /* posicion relatiuva para mantenerse en linea con botones */
+  display: inline-block;
+  text-align: right;
+}
+/* etiqueta para division en dos columnas opcion centrada */
+.colum3 {
+  width: 49%; /* mismo ancho de los botones */
+  position: relative; /* posicion relatiuva para mantenerse en linea con botones */
+  display: inline-block;
+  text-align: center;
+}
+/* estilo para la imagen en columna */
+.imgra {
+  width: 100%;
+  max-width: 400px; /* limitando el maximo para que en pantallas anchas no sea necesario scroll */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 2px solid #420063;
+  border-radius: 10px;
 }
 
 /* estilo para la division del pie de pagina */
@@ -343,6 +377,11 @@ h1 {
 /* cambio en el video insertado de youtube */
 iframe {
   width: 85%;
+}
+
+/* cambio a la imagen de las razas */
+.imgra {
+  margin-bottom: 70px;
 }
 
 /* cambio en el pie de pagina */
