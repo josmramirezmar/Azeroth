@@ -276,14 +276,14 @@ iframe {
 
 /* etiqueta para division en dos columnas la primera */
 .colum1 {
-  width: 49.5%;
+  width: 48%;
   position: relative;
   display: inline-block;
   margin-bottom: 15px;
 }
 /* etiqueta para division en dos columnas la segunda */
 .colum2 {
-  width: 49.5%;
+  width: 48%;
   position: relative;
   display: inline-block;
   text-align: right;
@@ -420,7 +420,7 @@ h1 {
 
 /* cambios en la barra de navegacion */
 .buttonav {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .buttonavin {
   font-size: 1.1rem;
@@ -429,6 +429,30 @@ h1 {
 /* cambio en el video insertado de youtube */
 iframe {
   width: 85%;
+}
+
+/* cambio en el orden razas */
+.imgcolum1 {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+.imgcolum2 {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+.colum3 {
+  width: 98%;
+  height: 150px;
+  position: relative;
+  margin: auto;
+}
+.colum4 {
+  width: 98%;
+  height: 150px;
+  position: relative;
+  margin: auto;
 }
 
 /* cambio en el pie de pagina */
