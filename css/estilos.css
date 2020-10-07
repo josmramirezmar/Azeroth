@@ -432,6 +432,9 @@ iframe {
 }
 
 /* cambio en el orden razas */
+.secraza {
+  width: 100%;
+}
 .imgcolum1 {
   width: 100%;
   position: relative;
