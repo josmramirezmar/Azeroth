@@ -276,32 +276,74 @@ iframe {
 
 /* etiqueta para division en dos columnas la primera */
 .colum1 {
-  width: 49%; /* mismo ancho de los botones */
-  position: relative; /* posicion relatiuva para mantenerse en linea con botones */
+  width: 49.5%;
+  position: relative;
   display: inline-block;
+  margin-bottom: 15px;
 }
 /* etiqueta para division en dos columnas la segunda */
 .colum2 {
-  width: 49%; /* mismo ancho de los botones */
-  position: relative; /* posicion relatiuva para mantenerse en linea con botones */
+  width: 49.5%;
+  position: relative;
   display: inline-block;
   text-align: right;
+  margin-bottom: 15px;
 }
-/* etiqueta para division en dos columnas opcion centrada */
-.colum3 {
-  width: 49%; /* mismo ancho de los botones */
-  position: relative; /* posicion relatiuva para mantenerse en linea con botones */
+
+/* estilo division seccion de raza */
+.secraza {
+  width: 445px;
+  height: 480px;
+  margin: auto;
+  position: relative;
   display: inline-block;
-  text-align: center;
 }
-/* estilo para la imagen en columna */
+/* etiqueta para division de la imagen izquierda raza */
+.imgcolum1 {
+  width: 222px;
+  float: left;
+}
+/* etiqueta para division de la imagen derecha raza */
+.imgcolum2 {
+  width: 222px;
+  float: left;
+}
+/* estilo para la imagen en columna raza */
 .imgra {
-  width: 100%;
-  max-width: 400px; /* limitando el maximo para que en pantallas anchas no sea necesario scroll */
-  margin-top: 5px;
-  margin-bottom: 5px;
+  width: 222px;
+  height: 340px;
   border: 2px solid #420063;
   border-radius: 10px;
+}
+/* etiqueta para division de texto izquierda raza */
+.colum3 {
+  width: 210px;
+  height: 340px;
+  float: right;
+  top: 5px;
+  right: 5px;
+  padding-right: 5px;
+  text-align: justify;
+  overflow-y: auto;
+}
+/* etiqueta para division de texto derecha raza */
+.colum4 {
+  width: 210px;
+  height: 340px;
+  float: right;
+  top: 5px;
+  right: 5px;
+  padding-right: 5px;
+  text-align: justify;
+  overflow-y: auto;
+}
+/* estilo para texto de navegacion volver a contenido */
+.volver {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  width: 445px;
+  text-align: center;
 }
 
 /* estilo para la division del pie de pagina */
@@ -349,6 +391,16 @@ iframe {
   width: 30%;
 }
 
+/* cambio en el orden razas */
+.imgcolum2 {
+  float: right;
+}
+.colum3 {
+  float: left;
+  left: 5px;
+  padding-left: 5px;
+}
+
 /* cambio en el video insertado de youtube */
 iframe {
   height: 30%;
@@ -377,11 +429,6 @@ h1 {
 /* cambio en el video insertado de youtube */
 iframe {
   width: 85%;
-}
-
-/* cambio a la imagen de las razas */
-.imgra {
-  margin-bottom: 70px;
 }
 
 /* cambio en el pie de pagina */
