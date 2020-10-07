@@ -271,7 +271,15 @@ h3 {
 /* etiqueta utilizada unicamente en el video insertado de youtube */
 iframe {
   width: 60%;
-  height: 60%;
+  height: 500px;
+}
+
+/* estilo para las imagenes de los liks de los libros */
+.imgl {
+  width: 25%;
+  margin: 5px;
+  border: 2px solid #420063;
+  border-radius: 10px;
 }
 
 /* etiqueta para division en dos columnas la primera */
@@ -403,7 +411,7 @@ iframe {
 
 /* cambio en el video insertado de youtube */
 iframe {
-  height: 30%;
+  height: 250px;
 }
 
 /* responsive para dispositivos menores a 600px */
