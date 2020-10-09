@@ -226,7 +226,7 @@ h3 {
   display: none;
   position: relative; /* para posicion en relazion a la division quie la continene */
   float: left;
-  left: -50% /* para que su posicion sea centrada */
+  left: -50%; /* para que su posicion sea centrada */
 }
 /* etiqueta utilizada para la division que muestra la segunda imagen de la galeria */
 .imagaleria2 {
@@ -234,7 +234,7 @@ h3 {
   display: none;
   position: relative; /* para posicion en relazion a la division quie la continene */
   float: left;
-  left: -150% /* para que su posicion sea centrada */
+  left: -150%; /* para que su posicion sea centrada */
 }
 /* estilo para imagenes grandes de la galeria */
 .imgcentg {
@@ -353,6 +353,54 @@ iframe {
   width: 445px;
   text-align: center;
 }
+
+/* etiqueta utilizada en titulo de texto oculto */
+h4 {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #420063;
+}
+
+/* estilo imagenes pequeñas de la galeria de actividades */
+.imgmini2 {
+  width: 100%;
+  max-width: 200px; /* ancho maximo por estetica */
+}
+/* etiqueta utilizada para la division que muestra el texto de la galeria */
+.txgaleria1 {
+  width: 300%; /* para llegar a aporximadamente a 80% de la ventana */
+  display: none;
+  position: relative; /* para posicion en relazion a la division quie la continene */
+  float: left;
+  text-align: justify;
+}
+.txgaleria2 {
+  width: 300%; /* para llegar a aporximadamente a 80% de la ventana */
+  display: none;
+  position: relative; /* para posicion en relazion a la division quie la continene */
+  float: left;
+  left: -100%; /* para que su posicion sea centrada */
+  text-align: justify;
+}
+.txgaleria3 {
+  width: 300%; /* para llegar a aporximadamente a 80% de la ventana */
+  display: none;
+  position: relative; /* para posicion en relazion a la division quie la continene */
+  float: left;
+  left: -200%; /* para que su posicion sea centrada */
+  text-align: justify;
+}
+/* visualizacion de la imagen en la galeria */
+.butgaleria:hover .txgaleria1 {
+  display: block;
+}
+.butgaleria:hover .txgaleria2 {
+  display: block;
+}
+.butgaleria:hover .txgaleria3 {
+  display: block;
+}
+
 
 /* estilo para la division del pie de pagina */
 .piep {
