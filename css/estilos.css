@@ -401,6 +401,23 @@ h4 {
   display: block;
 }
 
+/* estilo para items lista de las referencias */
+.liref {
+  border: none;
+}
+/* estilo para links de las referencias */
+.linkref:link {
+  color: #420063;
+}
+.linkref:visited {
+  color: #420063;
+}
+
+/* estilo para imagenen de navegacion del documento */
+.imgnav {
+  width: 90%;
+  max-width: 1000px; /* limitando el maximo para que en pantallas anchas no sea necesario scroll */
+}
 
 /* estilo para la division del pie de pagina */
 .piep {
