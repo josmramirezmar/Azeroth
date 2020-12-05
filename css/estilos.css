@@ -452,18 +452,28 @@ h4 {
 
 /* estilos MAPA INTERACTIVO */
 
-/* estilo para canvas */
-canvas {
-  background-color: #CCDDFF;
-  margin: auto;
-  max-width: 720px;
+/* estilo para la consola del mapa interactivo */
+.cmapi {
+  text-align: center;
+  margin: 0px 2.5% 15px 2.5%; /* margenes porcentuales para centrar */
+  padding: 0;
+  background: linear-gradient(to right, #003399 0%, #990033 100%); /* para generar un borde degrade */
+  border: 2px solid #420063;
+  border-radius: 10px;
+  width: 95%; /* ancho de la div para ocupar todo el espacio */
 }
 
-/* estilo para la copnsola */
-.cmapi {
-  box-shadow: 10px 15px 15px 0 rgba(0, 0, 0, 0.4);
-  margin: auto;
-  width: 720px;
+/* estilo para canvas */
+canvas {
+  display: block;
+  margin: auto; /* para centrarla dentro de la div */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  background-color: #000000;
+  border: 2px solid #420063;
+  border-radius: 10px;
+  max-width: 95%;
 }
 
 /* responsive para dispositivos menores a 900px */
