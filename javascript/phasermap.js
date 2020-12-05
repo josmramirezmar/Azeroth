@@ -3,6 +3,10 @@ var juego = new Phaser.Game(1435, 957, Phaser.CANVAS, "mapi");
 
 // Variables globales
 var fondo;
+var botonr;
+var botonl;
+var mright = false;
+var mleft = false;
 //var ppartida;
 //var pllegada;
 

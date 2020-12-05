@@ -506,6 +506,12 @@ iframe {
   height: 250px;
 }
 
+/* cambio estilo para canvas */
+canvas {
+  max-width: 1135px;
+  max-height: 657px;
+}
+
 /* responsive para dispositivos menores a 600px */
 @media only screen and (max-width: 600px) {
     body {
@@ -571,4 +577,10 @@ iframe {
   position: fixed;
   bottom: 2.5%;
   left: 18%;
+}
+
+/* cambio estilo para canvas */
+canvas {
+  max-width: 835px;
+  max-height: 357px;
 }
