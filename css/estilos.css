@@ -473,7 +473,7 @@ canvas {
   padding: 0;
   background-color: #000000;
   border: 2px solid #420063;
-  max-width: 1400px;
+  max-width: 1435px;
 }
 
 /* responsive para dispositivos menores a 900px */
@@ -503,12 +503,6 @@ canvas {
 /* cambio en el video insertado de youtube */
 iframe {
   height: 250px;
-}
-
-/* cambio estilo para canvas */
-canvas {
-  max-width: 1135px;
-  max-height: 657px;
 }
 
 /* responsive para dispositivos menores a 600px */
@@ -576,10 +570,4 @@ iframe {
   position: fixed;
   bottom: 2.5%;
   left: 18%;
-}
-
-/* cambio estilo para canvas */
-canvas {
-  max-width: 835px;
-  max-height: 420px;
 }
