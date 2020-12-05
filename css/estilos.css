@@ -450,6 +450,22 @@ h4 {
   right: 2%;
 }
 
+/* estilos MAPA INTERACTIVO */
+
+/* estilo para canvas */
+canvas {
+  background-color: #CCDDFF;
+  margin: auto;
+  max-width: 720px;
+}
+
+/* estilo para la copnsola */
+.cmapi {
+  box-shadow: 10px 15px 15px 0 rgba(0, 0, 0, 0.4);
+  margin: auto;
+  width: 720px;
+}
+
 /* responsive para dispositivos menores a 900px */
 @media only screen and (max-width: 900px) {
     body {
